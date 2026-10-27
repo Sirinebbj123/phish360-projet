@@ -1,0 +1,20 @@
+# données et sorties lourdes : jamais dans Git
+data/*
+!data/.gitkeep
+models/*
+!models/.gitkeep
+*.parquet
+*.zip
+spark-warehouse/
+# résultats : on publie seulement les petits fichiers (tableaux, figures, rapports)
+results/*
+!results/.gitkeep
+!results/*.csv
+!results/*.json
+!results/*.txt
+!results/figures/
+# environnement
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.log
