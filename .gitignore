@@ -1,0 +1,13 @@
+# données et sorties lourdes : jamais dans Git
+data/*
+!data/.gitkeep
+results/*
+!results/.gitkeep
+models/*
+!models/.gitkeep
+*.parquet
+spark-warehouse/
+# environnement
+.venv/
+__pycache__/
+.ipynb_checkpoints/

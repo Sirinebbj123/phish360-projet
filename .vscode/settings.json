@@ -1,0 +1,9 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  "python.terminal.activateEnvironment": true,
+  "terminal.integrated.env.windows": {
+    "PYSPARK_PYTHON": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+    "PYSPARK_DRIVER_PYTHON": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+  },
+  "files.exclude": { "**/__pycache__": true, "spark-warehouse": true }
+}

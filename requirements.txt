@@ -1,0 +1,22 @@
+# Phish360 - environnement du projet (Python 3.11 recommandé)
+# Big Data
+pyspark==3.5.3
+pyarrow>=15
+pandas>=2.1
+# Prétraitement des modalités
+beautifulsoup4>=4.12
+lxml>=5.0
+tldextract>=5.1
+Pillow>=10.0
+# Machine Learning / Deep Learning
+scikit-learn>=1.4
+xgboost>=2.0
+transformers>=4.40
+# torch et torchvision s'installent à part (voir guide, commande selon GPU ou CPU)
+# Analyse, graphiques, explicabilité
+matplotlib>=3.8
+seaborn>=0.13
+scipy>=1.12
+shap>=0.45
+jupyterlab>=4.1
+tqdm>=4.66
