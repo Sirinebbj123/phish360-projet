@@ -16,7 +16,7 @@ Write-Host "3/4 Installation des bibliothèques (requirements.txt)"
 
 Write-Host "4/4 Installation de PyTorch"
 if ($Gpu) {
-    & $py -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+    & $py -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 } else {
     & $py -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 }

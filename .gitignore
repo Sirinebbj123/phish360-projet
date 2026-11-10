@@ -11,3 +11,10 @@ spark-warehouse/
 .venv/
 __pycache__/
 .ipynb_checkpoints/
+
+models/
+data/
+.venv/
+logs/
+*.pt
+*.parquet

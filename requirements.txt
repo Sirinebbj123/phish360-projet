@@ -1,6 +1,10 @@
-# Phish360 - environnement du projet (Python 3.11 recommandé)
+# Phish360 - environnement du projet
+# Deux configurations testées :
+#   - PC du Sprint 1 : Python 3.11 + PySpark 3.5.3 + Java 17
+#   - PC du Sprint 2 : Python 3.13 + PySpark 4.x + Java 17 (lancer avec spark.sql.ansi.enabled=false, cf. guide)
 # Big Data
-pyspark==3.5.3
+pyspark==3.5.3 ; python_version < "3.12"
+pyspark>=4.0,<5 ; python_version >= "3.12"
 pyarrow>=15
 pandas>=2.1
 # Prétraitement des modalités
@@ -11,12 +15,17 @@ Pillow>=10.0
 # Machine Learning / Deep Learning
 scikit-learn>=1.4
 xgboost>=2.0
-transformers>=4.40
-# torch et torchvision s'installent à part (voir guide, commande selon GPU ou CPU)
+transformers>=4.44,<6         # DistilBERT (tâche 7)
+tokenizers>=0.19
+safetensors>=0.4
+huggingface_hub>=0.24
+# torch et torchvision s'installent À PART, avec l'index CUDA (voir guide) :
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 # Analyse, graphiques, explicabilité
 matplotlib>=3.8
 seaborn>=0.13
 scipy>=1.12
-shap>=0.45
+shap>=0.46                    # tâche 12 (graphiques SHAP)
+tabulate>=0.9                 # tableaux Markdown du rapport automatique (tâche 10)
 jupyterlab>=4.1
 tqdm>=4.66
